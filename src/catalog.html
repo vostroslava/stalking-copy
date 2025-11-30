@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог программ — Сталкер-Медиа (каркас)</title>
+    <meta
+      name="description"
+      content="Каталог программ бизнес-академии: управление, продажи, финансы. Каркас страницы."
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="./index.html">
+          <span class="brand__logo" aria-hidden="true">SM</span>
+          <span class="brand__text">
+            <span class="brand__name">Сталкер-Медиа</span>
+            <span class="brand__tagline">Бизнес-академия</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Главное меню">
+          <a href="./index.html#programs">Программы</a>
+          <a href="./index.html#events">События</a>
+          <a href="./index.html#speakers">Спикеры</a>
+          <a href="./index.html#contact">Контакты</a>
+        </nav>
+        <div class="header-actions">
+          <a class="link-phone" href="tel:+375291131132">+375 29 113-113-2</a>
+          <a class="button button--ghost" href="./index.html#contact">Консультация</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero--subpage">
+        <div class="container hero__inner">
+          <div class="hero__text">
+            <p class="eyebrow">Каталог программ</p>
+            <h1>Найдите подходящее обучение</h1>
+            <p class="lede">
+              Фильтры по теме, формату и уровню. Каркас страницы каталога для будущего дизайна.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section filters" id="filters">
+        <div class="container filters__inner">
+          <form class="filters__form">
+            <label class="filters__field">
+              Поиск
+              <input type="search" name="q" placeholder="Название или тема" />
+            </label>
+            <label class="filters__field">
+              Тема
+              <select name="category">
+                <option value="">Все</option>
+                <option value="management">Управление</option>
+                <option value="sales">Продажи</option>
+                <option value="finance">Финансы</option>
+                <option value="soft">Soft skills</option>
+              </select>
+            </label>
+            <label class="filters__field">
+              Формат
+              <select name="format">
+                <option value="">Любой</option>
+                <option value="online">Онлайн</option>
+                <option value="offline">Офлайн</option>
+                <option value="hybrid">Гибрид</option>
+                <option value="corp">Корпоратив</option>
+              </select>
+            </label>
+            <label class="filters__field">
+              Уровень
+              <select name="level">
+                <option value="">Любой</option>
+                <option value="owner">Собственник</option>
+                <option value="lead">Руководитель</option>
+                <option value="spec">Специалист</option>
+              </select>
+            </label>
+            <label class="filters__field">
+              Дата старта
+              <input type="date" name="startDate" />
+            </label>
+            <label class="filters__field">
+              Сортировка
+              <select name="sort">
+                <option value="soon">Ближайшие</option>
+                <option value="popular">Популярные</option>
+                <option value="price-asc">Цена ↑</option>
+                <option value="price-desc">Цена ↓</option>
+              </select>
+            </label>
+            <div class="filters__actions">
+              <button class="button" type="submit">Применить</button>
+              <button class="button button--ghost" type="reset">Сбросить</button>
+            </div>
+          </form>
+          <p class="filters__result">Найдено: 12 программ</p>
+        </div>
+      </section>
+
+      <section class="section" id="catalog">
+        <div class="container">
+          <div class="card-grid" id="programs">
+            <article class="card card--program">
+              <div class="card__meta">
+                <span class="pill">Офлайн • Минск</span>
+                <span class="pill pill--accent">Управление</span>
+              </div>
+              <h3>Полный контроль бизнеса</h3>
+              <p>Двухдневный семинар: цели, процессы, контроль исполнения.</p>
+              <ul class="card__list">
+                <li>Старт: по расписанию</li>
+                <li>Длительность: 2 дня</li>
+                <li>Уровень: собственник</li>
+                <li>Спикер: Наталья Космач</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button" href="./index.html#contact">Записаться</a>
+                <a class="button button--ghost" href="https://stalking.by/seminar_polnyj_kontrol_biznesa.html" target="_blank" rel="noreferrer">Подробнее</a>
+              </div>
+            </article>
+
+            <article class="card card--program">
+              <div class="card__meta">
+                <span class="pill">Офлайн • Минск</span>
+                <span class="pill pill--accent">Продажи</span>
+              </div>
+              <h3>SPIN: технология больших продаж</h3>
+              <p>Диагностика потребностей, работа с возражениями, закрытие сделок.</p>
+              <ul class="card__list">
+                <li>Старт: по расписанию</li>
+                <li>Длительность: 2 дня</li>
+                <li>Уровень: отдел продаж</li>
+                <li>Спикер: Андрей Гриневич</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button" href="./index.html#contact">Записаться</a>
+                <a class="button button--ghost" href="https://stalking.by/prodazhi_spin__tiekhnologhiia_bolshikh_prodazh.html" target="_blank" rel="noreferrer">Подробнее</a>
+              </div>
+            </article>
+
+            <article class="card card--program">
+              <div class="card__meta">
+                <span class="pill">Онлайн</span>
+                <span class="pill pill--accent">Финансы</span>
+              </div>
+              <h3>Высший пилотаж в управлении финансами</h3>
+              <p>План-факт, отчетность, управленческие решения по цифрам.</p>
+              <ul class="card__list">
+                <li>Старт: ежемесячно</li>
+                <li>Длительность: 4 недели онлайн</li>
+                <li>Уровень: руководитель/финдир</li>
+                <li>Спикер: Наталья Космач</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button" href="./index.html#contact">Записаться</a>
+                <a class="button button--ghost" href="https://stalking.by/vyzshyj_pilotazh_v_upravlienii_finansami.html" target="_blank" rel="noreferrer">Подробнее</a>
+              </div>
+            </article>
+
+            <article class="card card--program">
+              <div class="card__meta">
+                <span class="pill">Гибрид</span>
+                <span class="pill pill--accent">Продажи</span>
+              </div>
+              <h3>Школа построения отдела продаж</h3>
+              <p>Воронка, регламенты, контроль показателей, найм и адаптация.</p>
+              <ul class="card__list">
+                <li>Старт: поквартально</li>
+                <li>Длительность: 5 недель</li>
+                <li>Уровень: руководитель продаж</li>
+                <li>Спикер: Андрей Гриневич</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button" href="./index.html#contact">Записаться</a>
+                <a class="button button--ghost" href="https://stalking.by/trening_shkola_postroenija_otdela_prodazh.html" target="_blank" rel="noreferrer">Подробнее</a>
+              </div>
+            </article>
+
+            <article class="card card--program">
+              <div class="card__meta">
+                <span class="pill">Онлайн</span>
+                <span class="pill pill--accent">Переговоры</span>
+              </div>
+              <h3>Переговорные поединки</h3>
+              <p>Отработка сложных переговоров, возражений и удержание маржи.</p>
+              <ul class="card__list">
+                <li>Старт: по расписанию</li>
+                <li>Длительность: 2 дня</li>
+                <li>Уровень: продажи/руководители</li>
+                <li>Спикер: Андрей Гриневич</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button" href="./index.html#contact">Записаться</a>
+                <a class="button button--ghost" href="https://stalking.by/peregovornie_poedinki.html" target="_blank" rel="noreferrer">Подробнее</a>
+              </div>
+            </article>
+
+            <article class="card card--program">
+              <div class="card__meta">
+                <span class="pill">Онлайн</span>
+                <span class="pill pill--accent">HR</span>
+              </div>
+              <h3>Введение в должность и адаптация</h3>
+              <p>Маршрут адаптации, чек-листы, контроль 1–90 дней.</p>
+              <ul class="card__list">
+                <li>Старт: по расписанию</li>
+                <li>Длительность: 3 недели</li>
+                <li>Уровень: HR/руководитель</li>
+                <li>Спикер: Наталья Космач</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button" href="./index.html#contact">Записаться</a>
+                <a class="button button--ghost" href="https://stalking.by/praktikum_vvedenijie_v_dolzhnosc_i_adaptacijya.html" target="_blank" rel="noreferrer">Подробнее</a>
+              </div>
+            </article>
+
+            <article class="card card--program">
+              <div class="card__meta">
+                <span class="pill">Онлайн</span>
+                <span class="pill pill--accent">Управление</span>
+              </div>
+              <h3>Технология построения успешной команды</h3>
+              <p>4 вечерних модуля: лидерство, коммуникация, вовлеченность.</p>
+              <ul class="card__list">
+                <li>Старт: декабрь 2025</li>
+                <li>Длительность: 4 вечера</li>
+                <li>Уровень: руководитель</li>
+                <li>Спикер: Наталья Космач</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button" href="./index.html#contact">Записаться</a>
+                <a class="button button--ghost" href="https://stalking.by/online-tekhnologiya-postroyeniya-uspeshnoy-komandy.html" target="_blank" rel="noreferrer">Подробнее</a>
+              </div>
+            </article>
+
+            <article class="card card--program">
+              <div class="card__meta">
+                <span class="pill">Офлайн • Минск</span>
+                <span class="pill pill--accent">HR</span>
+              </div>
+              <h3>Практикум «Теремок: вовлеченность»</h3>
+              <p>Классификация сотрудников, «ядро команды», методы вовлечения.</p>
+              <ul class="card__list">
+                <li>Старт: 20 ноября 2025</li>
+                <li>Длительность: 1 день</li>
+                <li>Уровень: HR/руководитель</li>
+                <li>Спикер: Наталья Космач</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button" href="./index.html#contact">Записаться</a>
+                <a class="button button--ghost" href="https://stalking.by/upravlieniie/praktikum_po_povyshieniiu_vovliechiennosti_tieriemok_na_kogho_iz_sotrudnikov_dielat_stavki_20_11_2025.html" target="_blank" rel="noreferrer">Подробнее</a>
+              </div>
+            </article>
+
+            <article class="card card--program">
+              <div class="card__meta">
+                <span class="pill">Офлайн • Минск</span>
+                <span class="pill pill--accent">HR</span>
+              </div>
+              <h3>Вся правда о персонале: формула успешной команды</h3>
+              <p>Бизнес-встреча: вовлечённость, мотивация, ядро команды.</p>
+              <ul class="card__list">
+                <li>Старт: 19 сентября 2025</li>
+                <li>Длительность: 1 день</li>
+                <li>Уровень: HR/руководитель</li>
+                <li>Спикер: Наталья Космач</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button" href="./index.html#contact">Записаться</a>
+                <a class="button button--ghost" href="https://stalking.by/vstrecha-vsya-pravda-o-personale.html" target="_blank" rel="noreferrer">Подробнее</a>
+              </div>
+            </article>
+
+            <article class="card card--program">
+              <div class="card__meta">
+                <span class="pill">Офлайн • Минск</span>
+                <span class="pill pill--accent">Переговоры</span>
+              </div>
+              <h3>Ключи успешного переговорщика</h3>
+              <p>Четыре стиля переговоров под эмоциональное состояние клиента.</p>
+              <ul class="card__list">
+                <li>Старт: 18 ноября 2025</li>
+                <li>Длительность: 1 день</li>
+                <li>Уровень: продажи/руководители</li>
+                <li>Спикер: Андрей Гриневич</li>
+              </ul>
+              <div class="card__actions">
+                <a class="button" href="./index.html#contact">Записаться</a>
+                <a class="button button--ghost" href="https://stalking.by/praktikum-klyuchi-peregovorshchika.html" target="_blank" rel="noreferrer">Подробнее</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section help">
+        <div class="container help__inner">
+          <div>
+            <p class="eyebrow">Не нашли то, что нужно?</p>
+            <h2>Подберём программу под вашу задачу</h2>
+            <p>Оставьте контакты — свяжемся и предложим варианты.</p>
+          </div>
+          <form class="help__form">
+            <input type="text" name="name" placeholder="Имя" />
+            <input type="text" name="contacts" placeholder="Телефон или email" />
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section seo-text">
+        <div class="container">
+          <h2 class="visually-hidden">О программах</h2>
+          <p>
+            Здесь будет SEO-текст о программах бизнес-академии: направления,
+            форматы, выгоды для владельцев и руководителей.
+          </p>
+          <p>
+            Каркас страницы позволяет быстро перейти к финальной верстке и подключить реальные данные.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <p class="brand__name">Сталкер-Медиа</p>
+          <p class="brand__tagline">Бизнес-академия</p>
+        </div>
+        <div class="site-footer__links">
+          <a href="./index.html#programs">Программы</a>
+          <a href="./index.html#cases">Кейсы</a>
+          <a href="./index.html#contact">Контакты</a>
+        </div>
+        <div class="site-footer__meta">
+          <p>Политика конфиденциальности</p>
+          <p>Публичный договор</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

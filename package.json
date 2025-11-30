@@ -1,0 +1,27 @@
+{
+  "name": "stalking-copy",
+  "version": "1.0.0",
+  "description": "Modernized static copy of Stalking Media website",
+  "scripts": {
+    "dev": "live-server ./stalking.by --open=./index.html",
+    "dev:vite": "vite",
+    "build": "npm run clean && cp -R stalking.by dist && npm run postcss",
+    "build:vite": "vite build",
+    "preview:vite": "vite preview",
+    "clean": "rm -rf dist",
+    "postcss": "postcss stalking.by/**/*.css --replace",
+    "lint:css": "stylelint stalking.by/**/*.css",
+    "lint:html": "html-validate stalking.by/**/*.html",
+    "lighthouse": "lighthouse http://localhost:8080 --output html --output-path ./lighthouse-report.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "postcss-cli": "^10.1.0",
+    "autoprefixer": "^10.4.14",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "html-validate": "^7.0.0",
+    "lighthouse": "^12.0.0",
+    "vite": "^5.3.1"
+  }
+}
