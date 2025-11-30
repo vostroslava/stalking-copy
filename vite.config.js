@@ -3,6 +3,7 @@ import path from 'path';
 
 export default defineConfig({
   root: 'src',
+  base: process.env.GITHUB_PAGES ? '/stalking-copy/' : '/',
   server: {
     watch: {
       // Используем polling, чтобы обойти проблемы с fsevents на части систем
